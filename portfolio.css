@@ -1,0 +1,334 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* HEADER*/
+header {
+  background-color: lightblue;
+  position: fixed;
+  width: 100%;
+}
+header ul {
+  display: flex;
+  justify-content: end;
+  padding: 10px;
+}
+header ul li {
+  list-style: none;
+  margin: 10px;
+  padding: 20px;
+  margin: 10px;
+}
+.contact {
+  background-color: blueviolet;
+  border-radius: 50px;
+  }
+  .contact a{
+  color: antiquewhite;
+  text-decoration: none;
+
+}
+.section-principal {
+  background-color: blueviolet;
+  display: flex;
+  justify-content: space-evenly;
+  width: 100vw;
+  height: 100vh;
+  align-items: center;
+}
+.cont-presentación{
+  background-color: lightskyblue;
+  padding: 50px;
+  justify-content: center;
+}
+#h3-presentación{
+  font-size: 25px;
+  margin-bottom: 10px;
+  white-space: nowrap;
+  overflow: hidden;
+  width: 10em;
+  animation: anim 6s infinite;
+}
+@keyframes anim {
+  from {
+    width: 0;
+  }
+}
+span{
+  font-size: 50px;
+  color: rgb(119, 70, 184);
+}
+.section-principal p{
+  font-size: 20px;
+  margin-top: 10px;
+}
+button {
+  margin-top: 30px;
+  background-color: rgb(119, 70, 184);
+  border-radius:  600px;
+  padding: 20px;
+  border: 1px;
+  width: 150px;
+  font-size: 15p;
+font-size: 18px;
+}
+button a{
+  color:aliceblue ;
+  text-decoration: none;
+}
+
+.section-conocimientos {
+  background-color: lightslategray;
+  width: 100%;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  padding: 50px;
+  justify-content:center;
+  align-items:center;
+}
+.conocimientos-1 {
+  background-color: brown;
+  width: 500px;
+}
+.conocimientos-1 h2{
+  padding: 20px;
+  font-size: 30px;
+}
+.conocimientos-1 p{
+ font-size: 20px;
+}
+.grid{
+  background-color: beige;
+  display: flex;
+  flex-wrap: wrap;
+  width: 50%;
+  justify-content:space-around;
+  margin-top: 30px;
+}
+.icons{
+  background-color: aqua;
+  width: 230px;
+  height: 230px;
+  margin: 20px;
+  border: 1px solid rgb(27, 25, 23);
+  padding: 50px;
+  border-radius: 10px;
+  color: rgb(182, 152, 231);
+  
+}
+
+i{
+  font-size: 80px;
+  
+}
+.icons:hover{
+background-color: rgb(174, 0, 255);
+position: relative;
+transform: scale(1.1);
+z-index: 1;
+}
+
+h2{text-align: center;
+}
+h4 {
+  color: bisque;
+  text-align: center;
+  margin-top: 20px;
+}
+.section-cita{
+    background-color: rgb(245, 164, 164);
+    padding: 10px;
+    height: 300px;
+}
+blockquote{
+text-align: center;
+font-size: 20px;
+}
+#comillas{
+  font-size: 100px;
+}
+blockquote p{
+  padding: 10px;
+}
+
+.section-proyectos{
+  background-color: rgb(233, 133, 52);
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+  align-items: center;
+}
+.section-proyectos1{
+  background-color: brown;
+  width: 500px;
+}
+.section-proyectos1 h2{
+  padding: 20px;
+  font-size: 30px;
+}
+.section-proyectos1 p{
+  font-size: 20px;
+}
+.grid2{
+  width: 60%;
+  background-color: rgb(31, 133, 111);
+  display: flex;
+  flex-wrap: wrap;
+  margin-top: 10px;
+  justify-content: center;
+}
+.div-grid{
+background-color: rgb(204, 54, 191);
+width: 300px;
+height: 300px;
+margin: 10px;
+border: 2px solid;
+display: flex;
+flex-direction: column;
+justify-content: center;
+align-items: center;
+}
+.div-grid2{
+  width: 220px;
+  height: 210px;
+  margin: 10px;
+  border: 3px solid;
+  display: flex;
+  justify-content: center;
+}
+.imagen{
+  width:100%;
+}
+.proyectos-nombre{
+ align-items: center;
+}
+
+/*.div-grid2{
+background-color: rgb(204, 54, 191);
+width: 300px;
+margin: 10px;
+border: 2px solid;
+}
+.imagen{
+  width: 200px;
+  height: 200px;
+} */
+
+.section-form{
+  background-color: aqua;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  height: 500px;
+}
+.div-form{
+  width: 60%;
+  background-color: lightcoral;
+  display: flex;
+  justify-content:center;
+}
+.iconos-form{
+  background-color: aquamarine;
+  margin-top: 50px;
+}
+.div1-form{
+  background-color: lightcyan;
+width: 500px;
+ 
+}
+.div1-form h3{
+  margin-top: 30px;
+  margin-bottom: 50px;
+  text-align: left;
+
+}
+.iconos-contacto{
+  display: flex;
+  margin-top: 20px;
+}
+.iconos-contacto a{
+  text-decoration: none;
+  color: black;
+}
+#icono-contacto{
+font-size: 20px;
+width: 30px;
+}
+
+.div2-form{
+  margin-top: 30px;
+  margin: 10px;
+}
+.nombre-apellido{
+  background-color: aqua;
+  display: flex;
+justify-content: space-between;
+  width: 400px;
+  margin-top: 70px;
+  height: 80px;
+ 
+}
+.nombre-apellido input{
+margin-top: 20px;
+}
+label{
+  height: 10pxs;
+  padding: 20px;
+  padding-top: 10px;
+  margin-bottom: 15px;
+align-items: center;
+}
+input{
+  margin-bottom: 15px;
+  border-radius: 20px;
+  border: none;
+  padding: 5px;
+}
+#email{
+  margin-top: 20px;
+  border-radius: 20px;
+}
+#mensaje{
+  margin-top: 20px;
+  width: 450px;
+  height: 200px;
+  border-radius: 20px;
+  border: none;
+}
+#mensaje1{
+  margin-top: 20px;
+}
+
+footer{
+    background-color: lightgreen;
+    padding: 50px;
+    height: 400px;
+}
+.nav-footer{
+  display: flex;
+  justify-content: center;
+}
+.ul-footer{
+  display: flex;
+}
+.ul-footer li{
+  list-style: none;
+  margin: 20px;
+}
+.logos{
+  text-align: center;
+}
+#logos-footer{
+  font-size: 20px;
+  margin: 30px;
+  margin-top: 30px;
+}
+.frase-footer{
+  padding: 70px;
+  text-align: center;
+}
