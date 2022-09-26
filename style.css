@@ -3,12 +3,19 @@
   padding: 0;
   box-sizing: border-box;
 }
-
+:root{
+  --primario:rgb(149, 211, 211);
+  ---secundario: rgb(245, 193, 250);
+  --terciario: rgb(219, 128, 231);
+}
 /* HEADER*/
 header {
-  background-color: lightblue;
+  /*background:linear-gradient(90deg, rgb(233, 195, 236) 30%, rgb(89, 212, 212));*/
+  background-image: url(/img-portfolio/img-section.jpg);
+  background-size: cover;
   position: fixed;
-  width: 100%;
+  min-width: 100%;
+  background-color: aqua;
 }
 header ul {
   display: flex;
@@ -21,8 +28,12 @@ header ul li {
   padding: 20px;
   margin: 10px;
 }
+header ul li a{
+  color: white;
+  text-decoration: none;
+}
 .contact {
-  background-color: blueviolet;
+  background-color: var(--terciario);
   border-radius: 50px;
   }
   .contact a{
@@ -31,20 +42,23 @@ header ul li {
 
 }
 .section-principal {
-  background-color: blueviolet;
+  background-image: url(/img-portfolio/img-section.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-color: rgb(75, 24, 85);
   display: flex;
   justify-content: space-evenly;
-  width: 100vw;
+  min-width: 100vh;
   height: 100vh;
   align-items: center;
 }
 .cont-presentación{
-  background-color: lightskyblue;
+ 
   padding: 50px;
-  justify-content: center;
+  color: white;
 }
 #h3-presentación{
-  font-size: 25px;
+  font-size: 30px;
   margin-bottom: 10px;
   white-space: nowrap;
   overflow: hidden;
@@ -58,7 +72,7 @@ header ul li {
 }
 span{
   font-size: 50px;
-  color: rgb(119, 70, 184);
+  color:var(--terciario); 
 }
 .section-principal p{
   font-size: 20px;
@@ -78,10 +92,18 @@ button a{
   color:aliceblue ;
   text-decoration: none;
 }
-
-.section-conocimientos {
-  background-color: lightslategray;
+.img-principal{
+ width: 200px;
+ height: 200px;
+}
+.img-principal img{
   width: 100%;
+  opacity: 100%;
+}
+.section-conocimientos {
+  background-color: rgb(165, 105, 243);
+  min-width: 100vh;
+  height: 100vh;
   text-align: center;
   display: flex;
   flex-direction: column;
@@ -90,7 +112,7 @@ button a{
   align-items:center;
 }
 .conocimientos-1 {
-  background-color: brown;
+  background-color: blueviolet;
   width: 500px;
 }
 .conocimientos-1 h2{
@@ -110,13 +132,15 @@ button a{
 }
 .icons{
   background-color: aqua;
+  background-image: url(/img-portfolio/img-section.jpg);
+ /* background:linear-gradient(90deg, rgb(237, 209, 240) 30%, rgb(171, 240, 240));*/
   width: 230px;
   height: 230px;
   margin: 20px;
   border: 1px solid rgb(27, 25, 23);
   padding: 50px;
   border-radius: 10px;
-  color: rgb(182, 152, 231);
+  color: var(--primario);
   
 }
 
@@ -124,12 +148,10 @@ i{
   font-size: 80px;
   
 }
-.icons:hover{
+/*.icons:hover{
 background-color: rgb(174, 0, 255);
-position: relative;
 transform: scale(1.1);
-z-index: 1;
-}
+}*/
 
 h2{text-align: center;
 }
@@ -139,7 +161,7 @@ h4 {
   margin-top: 20px;
 }
 .section-cita{
-    background-color: rgb(245, 164, 164);
+    background-color: lightcoral;
     padding: 10px;
     height: 300px;
 }
@@ -149,6 +171,7 @@ font-size: 20px;
 }
 #comillas{
   font-size: 100px;
+  color: var(--terciario)
 }
 blockquote p{
   padding: 10px;
@@ -156,12 +179,14 @@ blockquote p{
 
 .section-proyectos{
   background-color: rgb(233, 133, 52);
-  width: 100%;
+  min-width: 100vh;
+  padding: 50px;
   display: flex;
   flex-direction: column;
   justify-content: center;
   text-align: center;
   align-items: center;
+  padding-top: 125px;
 }
 .section-proyectos1{
   background-color: brown;
@@ -176,7 +201,9 @@ blockquote p{
 }
 .grid2{
   width: 60%;
+  height: 100%;
   background-color: rgb(31, 133, 111);
+  padding-top: 40px;
   display: flex;
   flex-wrap: wrap;
   margin-top: 10px;
@@ -193,6 +220,13 @@ flex-direction: column;
 justify-content: center;
 align-items: center;
 }
+/*.div-grid:hover{
+    background-color: rgb(174, 0, 255);
+    position: relative;
+    transform: scale(1.1);
+    z-index: 1;
+    }*/
+
 .div-grid2{
   width: 220px;
   height: 210px;
@@ -221,10 +255,10 @@ border: 2px solid;
 
 .section-form{
   background-color: aqua;
-  width: 100%;
+  min-width: 100vh;
   display: flex;
   justify-content: center;
-  height: 500px;
+  height: 55vh;
 }
 .div-form{
   width: 60%;
@@ -261,6 +295,7 @@ width: 30px;
 }
 
 .div2-form{
+  padding-top: 20px;
   margin-top: 30px;
   margin: 10px;
 }
@@ -269,7 +304,7 @@ width: 30px;
   display: flex;
 justify-content: space-between;
   width: 400px;
-  margin-top: 70px;
+  margin-top: 50px;
   height: 80px;
  
 }
@@ -285,19 +320,19 @@ align-items: center;
 }
 input{
   margin-bottom: 15px;
-  border-radius: 20px;
+  border-radius: 10px;
   border: none;
   padding: 5px;
 }
 #email{
   margin-top: 20px;
-  border-radius: 20px;
+  border-radius: 10px;
 }
 #mensaje{
   margin-top: 20px;
   width: 450px;
   height: 200px;
-  border-radius: 20px;
+  border-radius: 10px;
   border: none;
 }
 #mensaje1{
@@ -306,8 +341,11 @@ input{
 
 footer{
     background-color: lightgreen;
+    background-image: url(/img-portfolio/img-section.jpg);
+    background-size: cover;
+    background-position: end;
     padding: 50px;
-    height: 400px;
+    height: 350px;
 }
 .nav-footer{
   display: flex;
@@ -320,6 +358,10 @@ footer{
   list-style: none;
   margin: 20px;
 }
+.ul-footer li a{
+color: white;
+text-decoration: none;
+}
 .logos{
   text-align: center;
 }
@@ -327,8 +369,11 @@ footer{
   font-size: 20px;
   margin: 30px;
   margin-top: 30px;
+  color: white;
 }
 .frase-footer{
   padding: 70px;
   text-align: center;
+  color: white;
+  font-size: 20px;
 }
