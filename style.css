@@ -42,7 +42,7 @@ header ul li a{
 
 }
 .section-principal {
-  background-image: url(/img-portfolio/img-section.jpg);
+  background-image: url(/img-portfolio/admin-reuniones.png);
   background-size: cover;
   background-repeat: no-repeat;
   background-color: rgb(75, 24, 85);
@@ -161,7 +161,7 @@ h4 {
   margin-top: 20px;
 }
 .section-cita{
-    background-color: lightcoral;
+    background-color: rgb(216, 25, 206);
     padding: 10px;
     height: 300px;
 }
