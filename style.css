@@ -6,16 +6,20 @@
 :root {
   --primario: rgb(149, 211, 211);
   ---secundario: rgb(245, 193, 250);
-  --terciario: rgb(89, 194, 176);
+  --terciario: rgb(52, 176, 180);
+}
+body{
+  font-family: sans-serif;
 }
 /* HEADER*/
 header {
   /*background:linear-gradient(90deg, rgb(233, 195, 236) 30%, rgb(89, 212, 212));*/
-  background-image: url(/img-portfolio/img-section.jpg);
+  background-image: url(/img-portfolio/img-3.webp);
   background-size: cover;
   position: fixed;
   min-width: 100%;
   background-color: aqua;
+  z-index: 3000;
 }
 header ul {
   display: flex;
@@ -40,8 +44,8 @@ header ul li a {
   color: antiquewhite;
   text-decoration: none;
 }
-@media screen and (max-width:800px) {
-  header{
+@media screen and (max-width: 800px) {
+  header {
     display: none;
   }
 }
@@ -49,13 +53,12 @@ header ul li a {
 
 /*INICIO SECCION PRINCIPAL*/
 .seccion-principal {
-  background-image: url(./img-portfolio/img-section.jpg);
+  background-image: url(./img-portfolio/img-3.webp);
   background-size: cover;
   background-repeat: no-repeat;
   background-color: rgb(75, 24, 85);
   display: flex;
   justify-content: space-evenly;
-  min-width: 100%;
   min-height: 100vh;
   align-items: center;
 }
@@ -76,10 +79,11 @@ header ul li a {
     width: 0;
   }
 }
-span {
+.span{
   font-size: 50px;
   color: var(--terciario);
 }
+
 .seccion-principal p {
   font-size: 20px;
   margin-top: 10px;
@@ -110,7 +114,11 @@ button a {
   .seccion-principal {
     flex-direction: column;
   }
-}
+  
+    
+
+  }
+
 /*FINAL SECCION PRINCIPAL*/
 
 /*INICIO SECCION CONOCIMIENTOS*/
@@ -124,6 +132,7 @@ button a {
   padding: 50px;
   justify-content: center;
   align-items: center;
+  padding-top: 100px;
 }
 .conocimientos-1 {
   background-color: rgb(219, 166, 166);
@@ -137,25 +146,33 @@ button a {
   font-size: 20px;
 }
 .grid {
-  background-color: rgb(32, 207, 207);
-  min-width: 70%;
-  min-height: 800px;
+  background-color: rgb(126, 77, 122);
+  gap: 1em;
+  min-height: 700px;
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   justify-content: center;
   align-items: center;
   margin-top: 12px;
+  padding: 1em;
 }
 /*prueba responsive seccion conocimientos*/
-@media screen and (max-width: 800px){
-  .grid{
-    grid-template-columns: repeat(2,1fr);
-    padding: 50px;
+@media screen and (max-width: 800px) {
+  .grid {
+    grid-template-columns: repeat(2, 1fr);
+    padding: 70px;
+    min-width: none;
+    min-height: none;
   }
+}
+@media screen and (max-width: 400px) {
+  .conocimientos-1 {
+    width: 100%;
   }
+}
 .iconos {
   background-color: blueviolet;
-  background-image: url(./img-portfolio/img-section.jpg);
+  background-image: url(./img-portfolio/img-3.webp);
   width: 230px;
   height: 230px;
   display: flex;
@@ -168,7 +185,7 @@ button a {
 
 i {
   font-size: 80px;
-  color: blueviolet;
+  color: rgb(26, 231, 187);
 }
 /*.icons:hover{
 background-color: rgb(174, 0, 255);
@@ -187,7 +204,7 @@ h4 {
 
 /*INICO SECCION CITA*/
 .seccion-cita {
-  background-image: url(./img-portfolio/img-section.jpg);
+  background-image: url(./img-portfolio/img-3.webp);
   background-color: rgb(216, 25, 206);
   padding: 10px;
   min-width: 100%;
@@ -215,7 +232,7 @@ blockquote {
 
 /*INICIO SECCION PROYECTOS*/
 .seccion-proyectos {
-  background-color: rgb(233, 133, 52);
+  background-color: rgb(250, 249, 249);
   min-width: 100%;
   padding: 50px;
   display: flex;
@@ -223,7 +240,7 @@ blockquote {
   justify-content: center;
   text-align: center;
   align-items: center;
-  padding-top: 125px;
+  padding-top: 100px;
 }
 .seccion-proyectos1 {
   background-color: brown;
@@ -237,9 +254,10 @@ blockquote {
   font-size: 20px;
 }
 .grid2 {
-  background-color: blueviolet;
-  min-width: 70%;
-  min-height: 1150px;
+  background-color: rgb(253, 251, 255);
+  min-height: 800px;
+  width: 800px;
+  gap: 2em;
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   justify-content: center;
@@ -247,9 +265,9 @@ blockquote {
   margin-top: 15px;
 }
 .div-grid {
-  background-color: rgb(72, 168, 168);
-  width: 270px;
-  height: 270px;
+  background-color: rgb(255, 255, 255);
+  width: 100%;
+  height: auto;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -259,23 +277,26 @@ blockquote {
   padding-top: 10px;
 }
 /*Prueba hover*/
-.div-grid:hover{
-      background-color: rgb(174, 0, 255);
-      transform: scale(1.1);
-      }
+.div-grid:hover {
+  background-color: rgb(252, 251, 253);
+  transform: scale(1.1);
+ box-shadow: 0px 20px 25px -10px rgba(127, 77, 221, 0.5);
+}
 
-/*Prueba responsive sección pryectos*/   
-@media screen and (max-width:800px){
-  .grid2{
-    grid-template-columns: repeat(2,1fr);
+/*Prueba responsive sección pryectos*/
+@media screen and (max-width: 800px) {
+  .grid2 {
+    grid-template-columns: repeat(2, 1fr);
+    width: 100%;
+    height: auto;
   }
-  
 }
 
 .div-grid2 {
-  width: 240px;
+  width: 100%;
   margin: 10px;
-  border: 2px solid;
+  height: auto;
+  border: 2px;
   display: flex;
   justify-content: center;
 }
@@ -289,7 +310,7 @@ blockquote {
 
 /*INICIO SECCION FORMULARIO*/
 .seccion-formulario {
-  background-color: aqua;
+  background-color: rgb(247, 248, 248);
   min-width: 100%;
   display: flex;
   justify-content: center;
@@ -297,21 +318,23 @@ blockquote {
 }
 .div-form {
   min-width: 60%;
-  background-color: lightcoral;
+  background-color: rgb(255, 255, 255);
   display: flex;
   margin: 120px;
-  border-radius: 15px;
-  border: 2px solid gray;
-  justify-content: space-around;
+  border-radius: 10px;
+  border: 2px solid rgb(249, 246, 250);
+  box-shadow:0px 20px 25px -10px rgba(127, 77, 221, 0.5) ;
+ justify-content: space-evenly;
 }
 .iconos-form {
-  background-color: aquamarine;
+  background-color: rgb(249, 252, 251);
   margin-top: 50px;
 }
 .div1-form {
-  background-color: rgb(165, 75, 177);
+  background-color: rgb(252, 249, 249);
   max-width: 400px;
   height: 45vh;
+  border-radius: 10px;
 }
 .div1-form h3 {
   margin-top: 30px;
@@ -332,13 +355,13 @@ blockquote {
 }
 
 .div2-form {
-  background-color: rgb(116, 116, 196);
+  background-color: rgb(245, 245, 250);
   padding-top: 20px;
   margin-top: 30px;
   margin: 10px;
 }
 .nombre-apellido {
-  background-color: aqua;
+  background-color: rgb(255, 255, 255);
   display: flex;
   justify-content: space-between;
   max-width: 400px;
@@ -349,7 +372,7 @@ blockquote {
   margin-top: 20px;
 }
 label {
-  height: 10pxs;
+  height: 10px;
   padding: 20px;
   padding-top: 10px;
   margin-bottom: 15px;
@@ -358,8 +381,9 @@ label {
 input {
   margin-bottom: 15px;
   border-radius: 10px;
-  border: none;
+  border-color: rgb(172, 127, 255);
   padding: 5px;
+  box-shadow:0px 20px 25px -10px rgba(127, 77, 221, 0.5) ;
 }
 #email {
   margin-top: 20px;
@@ -375,15 +399,18 @@ input {
 #mensaje1 {
   margin-top: 20px;
 }
-@media screen and (max-width:800px){
-  .div-form{
+@media screen and (max-width: 800px) {
+  .div-form {
     flex-direction: column;
   }
-  .nombre-apellido{
+  .nombre-apellido {
     flex-direction: column;
   }
-  #mensaje{
+  #mensaje {
     width: 250px;
+  }
+  .div1-form{
+    margin: 10px;
   }
 }
 /*FINAL SECCION FORMULARIO*/
@@ -391,7 +418,7 @@ input {
 /*INICIO FOOTER*/
 footer {
   background-color: lightgreen;
-  background-image: url(/img-portfolio/img-section.jpg);
+  background-image: url(/img-portfolio/img-3.webp);
   background-size: cover;
   background-position: end;
   padding: 50px;
