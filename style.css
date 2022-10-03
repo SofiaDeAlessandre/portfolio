@@ -8,12 +8,12 @@
   ---secundario: rgb(245, 193, 250);
   --terciario: rgb(52, 176, 180);
 }
-body{
+body {
   font-family: sans-serif;
 }
 /* HEADER*/
 header {
- /* background:linear-gradient(90deg, rgb(0, 0, 0) 30%, rgb(124, 39, 124), rgb(2, 0, 14));*/
+  /* background:linear-gradient(90deg, rgb(0, 0, 0) 30%, rgb(124, 39, 124), rgb(2, 0, 14));*/
   background-image: url(./img-portfolio/img-3.webp);
   background-size: cover;
   position: fixed;
@@ -37,32 +37,45 @@ header ul li a {
   text-decoration: none;
 }
 .contacto {
-  background-color: var(--terciario);
+  background-color: rgb(43, 206, 179);
   border-radius: 50px;
 }
 .contacto a {
   color: antiquewhite;
   text-decoration: none;
 }
+/*Responsive Design Header*/
 
-/*@media screen and (max-width: 880px) {
+@media screen and (max-width: 880px) {
   header {
-    width: auto;
+    background: linear-gradient(
+      90deg,
+      rgb(0, 0, 0) 30%,
+      rgb(124, 39, 124),
+      rgb(2, 0, 14)
+    );
   }
-}*/
+  .ul-header li {
+    font-size: 12px;
+  }
+}
 @media screen and (max-width: 480px) {
-  header{
-    background:linear-gradient(90deg, rgb(0, 0, 0) 30%, rgb(124, 39, 124), rgb(2, 0, 14)); 
+  header {
+    background: linear-gradient(
+      90deg,
+      rgb(0, 0, 0) 30%,
+      rgb(124, 39, 124),
+      rgb(2, 0, 14)
+    );
   }
-  .ul-header li{
+  .ul-header li {
     font-size: 10px;
-   padding: 5px;
-   margin: 5px;
-   display: flex;
-   align-items: center;
+    padding: 5px;
+    margin: 5px;
+    display: flex;
+    align-items: center;
   }
-  }
-  
+}
 
 /*FIN HEADER*/
 
@@ -76,40 +89,38 @@ header ul li a {
   min-height: 100vh;
   align-items: center;
   min-width: 100%;
-  
 }
 .cont-presentacion {
   padding: 50px;
   color: white;
-  }
-  .cont-presentacion *{
-    margin-bottom: 30px;
-  }
-.cont-presentacion h1{
+}
+.cont-presentacion * {
+  margin-bottom: 30px;
+}
+.cont-presentacion h1 {
   font-size: 30px;
 }
-.cont-presentacion p{
+.cont-presentacion p {
   font-size: 50px;
 }
-  
+
 #h3-presentacion {
   font-size: 45px;
   margin-bottom: 10px;
   white-space: nowrap;
   overflow: hidden;
   width: 10em;
-  color: rgb(243, 250, 249);
+  color: white;
 }
-#h3-presentacion span{
-color: aquamarine;
+#h3-presentacion span {
+  color: aquamarine;
 }
 
-.span{
+.span {
   font-size: 70px;
   color: white;
-  font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
   text-shadow: 5px 5px 5px rgb(9, 184, 154);
-  
 }
 .seccion-principal p {
   font-size: 20px;
@@ -117,7 +128,7 @@ color: aquamarine;
 }
 button {
   margin-top: 30px;
-  background-color: rgb(119, 70, 184);
+  background-color: rgb(43, 206, 179);
   border-radius: 600px;
   padding: 20px;
   border: 1px;
@@ -139,44 +150,57 @@ button a {
   opacity: 80%;
 }
 
+/*Responsive Design sección principal*/
 @media screen and (max-width: 880px) {
   .seccion-principal {
+    display: flex;
     flex-direction: column;
+    justify-content: center;
   }
+  .cont-presentacion {
+    width: 80%;
+    text-align: center;
   }
-  @media screen and (max-width: 480px) {
-    .seccion-principal{
-      display: flex;
-      flex-direction: column;
-      justify-content: center;
-      
-    }
-    .span{font-size: 45px;
-      width: 100%;
-    }
-  .cont-presentacion{
+  #h3-presentacion {
+    font-size: 40px;
+    text-align: center;
+    margin-left: 60px;
+  }
+}
+@media screen and (max-width: 480px) {
+  .seccion-principal {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+  .span {
+    font-size: 45px;
+    width: 100%;
+  }
+  .cont-presentacion {
     width: 70%;
     margin: 30px;
     margin-top: 20px;
     padding-top: 30px;
     text-align: center;
     margin-bottom: 30px;
-    }
-    .cont-presentacion *{
-      margin-bottom: 30px;
-    }
-  .cont-presentacion h1{
-font-size: 20px;
-width: 100%;
   }
-  #h3-presentacion{
-font-size: 20px;
-text-align: center;
+  .cont-presentacion * {
+    margin-bottom: 30px;
   }
-  button{
+  .cont-presentacion h1 {
+    font-size: 20px;
+    width: 100%;
+  }
+  #h3-presentacion {
+    font-size: 20px;
+    text-align: center;
+    margin-left: 0px;
+  }
+  button {
     padding: 10px;
   }
-  }
+}
 
 /*FINAL SECCION PRINCIPAL*/
 
@@ -200,6 +224,7 @@ text-align: center;
 .conocimientos-1 h2 {
   padding: 20px;
   font-size: 30px;
+  color: rgb(136, 92, 194);
 }
 .conocimientos-1 p {
   font-size: 20px;
@@ -215,27 +240,10 @@ text-align: center;
   margin-top: 12px;
   padding: 1em;
 }
-/*prueba responsive seccion conocimientos*/
-@media screen and (max-width: 880px) {
-  .grid {
-    grid-template-columns: repeat(2, 1fr);
-    padding: 70px;
-    min-width: none;
-    min-height: none;
-  }
-}
-@media screen and (max-width: 480px) {
-  .conocimientos-1 {
-    width: 100%;
-  }
-  .grid{
-    grid-template-columns: 1fr;
-  }
-}
+
 .iconos {
   background-color: white;
   background-image: url(./img-portfolio/img-3.webp);
-  background-size: auto;
   background-position: end;
   width: 230px;
   height: 230px;
@@ -249,12 +257,11 @@ text-align: center;
 
 i {
   font-size: 80px;
-  color:rgb(6, 214, 179) ;
-  
+  color: rgb(6, 214, 179);
 }
-.iconos:hover{
-transform: scale(1.1);
-box-shadow: 0px 20px 25px -10px rgba(63, 232, 238, 0.5)
+.iconos:hover {
+  transform: scale(1.1);
+  box-shadow: 0px 20px 25px -10px rgba(63, 232, 238, 0.5);
 }
 
 h2 {
@@ -265,15 +272,33 @@ h4 {
   text-align: center;
   margin-top: 20px;
 }
+
+/*Responsive Design sección conocimientos*/
+
+@media screen and (max-width: 880px) {
+  .grid {
+    grid-template-columns: repeat(2, 1fr);
+    padding: 70px;
+    min-width: none;
+    min-height: none;
+  }
+}
+@media screen and (max-width: 480px) {
+  .conocimientos-1 {
+    width: 100%;
+  }
+  .grid {
+    grid-template-columns: 1fr;
+  }
+}
 /*FINAL SECCION CONOCIMIENTOS*/
 
 /*INICO SECCION CITA*/
 .seccion-cita {
   background-image: url(./img-portfolio/img-3.webp);
-  background-color: white;
+  background-color: black;
   background-size: cover;
   padding: 10px;
-  min-width: 100%;
 }
 blockquote {
   text-align: center;
@@ -293,6 +318,18 @@ blockquote {
   text-align: center;
   color: rgb(43, 206, 179);
 }
+/*Responsive Design sección cita*/
+@media screen and (max-width: 880px) {
+  blockquote {
+    width: 80%;
+    margin: 70px;
+  }
+}
+@media screen and (max-width: 480px) {
+  blockquote {
+    color: rgb(43, 206, 179);
+  }
+}
 /*FINAL SECCION CITA*/
 
 /*INICIO SECCION PROYECTOS*/
@@ -308,14 +345,15 @@ blockquote {
   padding-top: 100px;
 }
 .seccion-proyectos1 {
-  background-color:black;
-  width: 500px; 
+  background-color: black;
+  width: 500px;
   color: white;
 }
 
 .seccion-proyectos1 h2 {
   padding: 20px;
   font-size: 30px;
+  color: rgb(136, 92, 194);
 }
 .seccion-proyectos1 p {
   font-size: 20px;
@@ -332,7 +370,7 @@ blockquote {
   margin-top: 15px;
 }
 .div-grid {
-  background-color:white;
+  background-color: white;
   width: 100%;
   height: auto;
   display: flex;
@@ -347,26 +385,7 @@ blockquote {
 .div-grid:hover {
   background-color: rgb(252, 251, 253);
   transform: scale(1.1);
- box-shadow: 0px 20px 25px -10px rgba(63, 232, 238, 0.5);
-}
-
-/*Prueba responsive sección pryectos*/
-@media screen and (max-width: 880px) {
-  .grid2 {
-    grid-template-columns: repeat(2, 1fr);
-}
-.div-grid{
-  width: 200px;
-}
-}
-@media screen and (max-width: 480px) {
-  .seccion-proyectos1{
-    width: 200px;
-  }
-  .grid2{
-    grid-template-columns: 1fr;
-    width: 400px;
-  }
+  box-shadow: 0px 20px 25px -10px rgba(63, 232, 238, 0.5);
 }
 
 .div-grid2 {
@@ -383,11 +402,30 @@ blockquote {
 .proyectos-nombre {
   align-items: center;
 }
+
+/*Responsive Design sección pryectos*/
+@media screen and (max-width: 880px) {
+  .grid2 {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  .div-grid {
+    width: 200px;
+  }
+}
+@media screen and (max-width: 480px) {
+  .seccion-proyectos1 {
+    width: 200px;
+  }
+  .grid2 {
+    grid-template-columns: 1fr;
+    width: 400px;
+  }
+}
 /*FINAL SECCION PROYECTOS*/
 
 /*INICIO SECCION FORMULARIO*/
 .seccion-formulario {
-  background-color:black;
+  background-color: black;
   min-width: 100%;
   display: flex;
   justify-content: center;
@@ -400,15 +438,15 @@ blockquote {
   margin: 120px;
   border-radius: 10px;
   border: 1px solid rgb(203, 167, 245);
-  box-shadow:0px 20px 25px -10px rgba(127, 77, 221, 0.5) ;
- justify-content: space-evenly;
+  box-shadow: 0px 20px 25px -10px rgba(127, 77, 221, 0.5);
+  justify-content: space-evenly;
 }
 .iconos-form {
-  background-color:black;
+  background-color: black;
   margin-top: 50px;
 }
 .div1-form {
-  background-color:black;
+  background-color: black;
   max-width: 400px;
   height: 45vh;
   border-radius: 10px;
@@ -418,7 +456,7 @@ blockquote {
   margin-top: 30px;
   margin-bottom: 50px;
   text-align: left;
-  text-shadow: 15px 15px 15px  rgb(180, 124, 252);
+  text-shadow: 15px 15px 15px rgb(180, 124, 252);
 }
 .iconos-contacto {
   display: flex;
@@ -428,7 +466,7 @@ blockquote {
   text-decoration: none;
   color: white;
 }
-.iconos-contacto i{
+.iconos-contacto i {
   color: rgb(65, 182, 172);
 }
 #icono-contacto {
@@ -437,14 +475,14 @@ blockquote {
 }
 
 .div2-form {
-  background-color:black;
+  background-color: black;
   padding-top: 20px;
   margin-top: 30px;
   margin: 10px;
 }
-.div2-form h3{
+.div2-form h3 {
   color: white;
-  text-shadow: 15px 15px 15px  rgb(180, 124, 252);
+  text-shadow: 15px 15px 15px rgb(180, 124, 252);
 }
 .nombre-apellido {
   background-color: black;
@@ -465,7 +503,7 @@ label {
   align-items: center;
   color: white;
 }
-::placeholder{
+::placeholder {
   color: white;
 }
 input {
@@ -473,7 +511,7 @@ input {
   border-radius: 10px;
   border-color: rgb(172, 127, 255);
   padding: 5px;
-  box-shadow:0px 20px 25px -10px rgba(127, 77, 221, 0.5) ;
+  box-shadow: 0px 20px 25px -10px rgba(127, 77, 221, 0.5);
   background-image: url(./img-portfolio/img-3.webp);
   background-size: cover;
 }
@@ -489,13 +527,25 @@ input {
   height: 200px;
   border-radius: 10px;
   border-color: rgb(172, 127, 255);
-  box-shadow:0px 20px 25px -10px rgba(127, 77, 221, 0.5) ;
+  box-shadow: 0px 20px 25px -10px rgba(127, 77, 221, 0.5);
   background-image: url(./img-portfolio/img-3.webp);
   background-size: cover;
 }
 #mensaje1 {
   margin-top: 20px;
 }
+#button-form {
+  color: white;
+  background-color: black;
+  font-size: 15px;
+  width: 80px;
+}
+#button-form:hover {
+  cursor: pointer;
+  background-color: rgb(71, 13, 126);
+  transform: scale(1.1);
+}
+/*Responsive Design Formulario*/
 @media screen and (max-width: 880px) {
   .div-form {
     flex-direction: column;
@@ -506,51 +556,50 @@ input {
   #mensaje {
     width: 250px;
   }
-  .div1-form{
+  .div1-form {
     margin: 60px;
     height: 300px;
   }
-  .div1-form h3{
+  .div1-form h3 {
     text-align: left;
   }
-  .div1-form p{
+  .div1-form p {
     margin: 10px;
   }
-  .iconos-form{
+  .iconos-form {
     margin: 30px;
   }
-  .div2-form{
+  .div2-form {
     margin: 60px;
   }
-  .div2-form h3{
+  .div2-form h3 {
     text-align: left;
   }
+}
+
+@media screen and (max-width: 480px) {
+  .div-form {
+    min-width: 90%;
   }
-  
-  @media screen and (max-width: 480px){
-    
-    .div-form{
-      min-width: 90%;
-    }
-   #icono-contacto{
+  #icono-contacto {
     margin-top: 10px;
-   }
-  .iconos-contacto{
+  }
+  .iconos-contacto {
     margin-left: 50px;
   }
-  .div1-form{
+  .div1-form {
     height: 400px;
   }
-  .div1-form h3{
+  .div1-form h3 {
     text-align: center;
   }
-  .div1-form p{
+  .div1-form p {
     text-align: center;
   }
-  .div2-form{
+  .div2-form {
     text-align: center;
   }
-  .div2-form h3{
+  .div2-form h3 {
     text-align: center;
   }
 }
@@ -595,15 +644,14 @@ footer {
   color: white;
   font-size: 20px;
 }
-
-@media screen and (max-width: 480px){
-  .nav-footer{
+/*Responsive Design Footer*/
+@media screen and (max-width: 480px) {
+  .nav-footer {
     width: 100%;
   }
-  .ul-footer{
+  .ul-footer {
     width: auto;
     font-size: 12px;
   }
-  
 }
 /*FINAL FOOTER*/
