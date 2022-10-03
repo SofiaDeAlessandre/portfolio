@@ -673,18 +673,17 @@ footer {
 }
 /*Responsive Design Footer*/
 @media screen and (min-width: 320px) and (max-width: 480px) {
-  .nav-footer {
-    width: 150px;
+  footer{
+    padding: 10px;
   }
   .ul-footer {
-    width: 50px;
-    display: flex;
+    width: 200px;
   }
   .ul-footer li{
     margin: 5px;
     width: auto;
-    font-size: 12px;
-    text-align: center;
+    font-size: 10px;
+    text-align: end;
   }
   .logos a{
     font-size: 10px;
