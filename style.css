@@ -38,7 +38,7 @@ header ul li a {
   text-decoration: none;
 }
 .contacto {
-  background-color: rgb(43, 206, 179);
+  background-color:rgb(76, 16, 88) ;
   border-radius: 50px;
 }
 .contacto a {
@@ -138,7 +138,7 @@ header ul li a {
 }
 button {
   margin-top: 30px;
-  background-color: rgb(43, 206, 179);
+  background-color: rgb(76, 16, 88);
   border-radius: 600px;
   padding: 20px;
   border: 1px;
@@ -157,7 +157,6 @@ button a {
 .img-principal img {
   width: 100%;
   border-radius: 50%;
-  opacity: 80%;
 }
 
 /*Responsive Design sección principal*/
@@ -233,7 +232,7 @@ button a {
 .conocimientos-1 h2 {
   padding: 20px;
   font-size: 30px;
-  color: rgb(136, 92, 194);
+  color: rgb(9, 184, 154);
 }
 .conocimientos-1 p {
   font-size: 20px;
@@ -317,6 +316,10 @@ h4 {
   background-color: black;
   background-size: cover;
   padding: 10px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
 blockquote {
   text-align: center;
@@ -333,8 +336,7 @@ blockquote {
 .seccion-cita p {
   font-size: 40px;
   padding: 30px;
-  text-align: center;
-  color: rgb(43, 206, 179);
+  color: rgb(9, 184, 154);
 }
 /*Responsive Design sección cita*/
 @media screen and (max-width: 880px) {
@@ -346,9 +348,9 @@ blockquote {
 @media screen and (min-width: 320px) and (max-width: 480px) {
   blockquote {
     color: rgb(43, 206, 179);
-    margin-right: 10px;
     text-align: center;
   }
+  
   .seccion-cita p{
     margin-right: 0px;
     margin: none;
@@ -380,7 +382,7 @@ blockquote {
 .seccion-proyectos1 h2 {
   padding: 20px;
   font-size: 30px;
-  color: rgb(136, 92, 194);
+  color: rgb(9, 184, 154);
 }
 .seccion-proyectos1 p {
   font-size: 20px;
@@ -434,6 +436,7 @@ blockquote {
 @media screen and (max-width: 880px) {
   .grid2 {
     grid-template-columns: repeat(2, 1fr);
+    width: 0%;
   }
   .div-grid {
     width: 200px;
@@ -494,7 +497,7 @@ blockquote {
   color: white;
 }
 .iconos-contacto i {
-  color: rgb(65, 182, 172);
+  color:rgb(9, 184, 154) ;
 }
 #icono-contacto {
   font-size: 20px;
@@ -569,8 +572,9 @@ input {
 }
 #button-form:hover {
   cursor: pointer;
-  background-color: rgb(71, 13, 126);
+  background-color:black;
   transform: scale(1.1);
+  color: rgb(9, 184, 154);
 }
 /*Responsive Design Formulario*/
 @media screen and (max-width: 880px) {
@@ -676,9 +680,7 @@ footer {
   footer{
     padding: 10px;
   }
-  .ul-footer {
-    width: 200px;
-  }
+  
   .ul-footer li{
     margin: 5px;
     width: auto;
