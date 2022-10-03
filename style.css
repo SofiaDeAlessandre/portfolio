@@ -279,7 +279,7 @@ h4 {
 @media screen and (max-width: 880px) {
   .grid {
     grid-template-columns: repeat(2, 1fr);
-    padding: 70px;
+    padding: 50px;
     min-width: none;
     min-height: none;
   }
@@ -287,6 +287,7 @@ h4 {
 @media screen and (max-width: 480px) {
   .conocimientos-1 {
     width: 100%;
+    padding: 10px;
   }
   .grid {
     grid-template-columns: 1fr;
@@ -419,7 +420,7 @@ blockquote {
   }
   .grid2 {
     grid-template-columns: 1fr;
-    width: 400px;
+    width: 300px;
   }
 }
 /*FINAL SECCION PROYECTOS*/
