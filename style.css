@@ -59,14 +59,15 @@ header ul li a {
     font-size: 12px;
   }
 }
-@media screen and (max-width: 480px) {
+@media screen and (min-width: 320px) and (max-width: 480px) {
   header {
     background: linear-gradient(
       90deg,
       rgb(0, 0, 0) 30%,
       rgb(124, 39, 124),
-      rgb(2, 0, 14)
-    );
+      rgb(2, 0, 14));
+    
+    position: absolute;
   }
   .ul-header li {
     font-size: 10px;
@@ -295,7 +296,7 @@ h4 {
 
 /*INICO SECCION CITA*/
 .seccion-cita {
-  background-image: url(./img-portfolio/img-3.webp);
+  background-image: url(./img-portfolio/img-prueba2.jpg);
   background-color: black;
   background-size: cover;
   padding: 10px;
@@ -639,19 +640,26 @@ footer {
   color: white;
 }
 .frase-footer {
-  padding: 70px;
+  padding-top: 60px;
   text-align: center;
   color: white;
   font-size: 20px;
 }
 /*Responsive Design Footer*/
-@media screen and (max-width: 480px) {
+@media screen and (min-width: 320px) and (max-width: 480px) {
   .nav-footer {
-    width: 100%;
+    width: 90%;
   }
   .ul-footer {
     width: auto;
     font-size: 12px;
+  }
+  .logos a{
+    font-size: 10px;
+  }
+  .frase-footer{
+    font-size: 15px;
+  
   }
 }
 /*FINAL FOOTER*/
