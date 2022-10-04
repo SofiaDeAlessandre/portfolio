@@ -262,7 +262,6 @@ button a {
   align-items: center;
   margin: auto;
   border-radius: 12px;
-  cursor: pointer;
 }
 
 i {
@@ -272,6 +271,7 @@ i {
 .iconos:hover {
   transform: scale(1.1);
   box-shadow: 0px 20px 25px -10px rgba(63, 232, 238, 0.5);
+  cursor: pointer;
 }
 
 h2 {
@@ -411,13 +411,13 @@ blockquote {
   margin: auto;
   border-radius: 12px;
   padding-top: 10px;
-  cursor: pointer;
 }
 /*Prueba hover*/
 .div-grid:hover {
   background-color: rgb(252, 251, 253);
   transform: scale(1.1);
   box-shadow: 0px 20px 25px -10px rgba(63, 232, 238, 0.5);
+  cursor: pointer;
 }
 
 .div-grid2 {
