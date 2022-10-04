@@ -57,7 +57,7 @@ header ul li a {
     );
   }
   .ul-header li {
-    font-size: 12px;
+    font-size: 15px;
   }
 }
 @media screen and (min-width: 320px) and (max-width: 480px) {
@@ -67,12 +67,9 @@ header ul li a {
       rgb(0, 0, 0) 30%,
       rgb(124, 39, 124),
       rgb(2, 0, 14));
-    
-    position: absolute;
-  
+    position: fixed;
   }
   .nav-header{
-    max-width: 300px;
     margin-left: 5px;
   }
   .ul-header{
@@ -123,7 +120,7 @@ header ul li a {
   color: white;
 }
 #h3-presentacion span {
-  color: aquamarine;
+  color: white;
 }
 
 .span {
@@ -208,6 +205,10 @@ button a {
   button {
     padding: 10px;
   }
+  .img-principal{
+    width: 120px;
+    height: 120px;
+  }
 }
 
 /*FINAL SECCION PRINCIPAL*/
@@ -225,7 +226,7 @@ button a {
   padding-top: 100px;
 }
 .conocimientos-1 {
-  background-color: black;
+  background-color:black;
   width: 500px;
   color: white;
 }
@@ -261,6 +262,7 @@ button a {
   align-items: center;
   margin: auto;
   border-radius: 12px;
+  cursor: pointer;
 }
 
 i {
@@ -409,6 +411,7 @@ blockquote {
   margin: auto;
   border-radius: 12px;
   padding-top: 10px;
+  cursor: pointer;
 }
 /*Prueba hover*/
 .div-grid:hover {
@@ -487,6 +490,7 @@ blockquote {
   margin-bottom: 50px;
   text-align: left;
   text-shadow: 15px 15px 15px rgb(180, 124, 252);
+  font-size: 30px;
 }
 .iconos-contacto {
   display: flex;
@@ -513,6 +517,7 @@ blockquote {
 .div2-form h3 {
   color: white;
   text-shadow: 15px 15px 15px rgb(180, 124, 252);
+  font-size: 30px;
 }
 .nombre-apellido {
   background-color: black;
@@ -539,16 +544,18 @@ label {
 input {
   margin-bottom: 15px;
   border-radius: 10px;
-  border-color: rgb(172, 127, 255);
+  border-color: rgb(139, 99, 212);
   padding: 5px;
   box-shadow: 0px 20px 25px -10px rgba(127, 77, 221, 0.5);
   background-image: url(./img-portfolio/img-3.webp);
+  opacity: 70%;
   background-size: cover;
 }
 #email {
   margin-top: 20px;
   border-radius: 10px;
   background-image: url(./img-portfolio/img-3.webp);
+  opacity: 70%;
   background-size: cover;
 }
 #mensaje {
@@ -559,6 +566,7 @@ input {
   border-color: rgb(172, 127, 255);
   box-shadow: 0px 20px 25px -10px rgba(127, 77, 221, 0.5);
   background-image: url(./img-portfolio/img-3.webp);
+  opacity: 70%;
   background-size: cover;
 }
 #mensaje1 {
