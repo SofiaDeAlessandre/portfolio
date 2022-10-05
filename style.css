@@ -276,7 +276,7 @@ blockquote {
 .proyectos-nombre {
   align-items: center;
 }
-#a-portfolio{
+#a-portfolio {
   text-decoration: none;
   color: black;
 }
@@ -451,8 +451,8 @@ footer {
 }
 /*FINAL FOOTER*/
 
+/*RESPONSIVE DESIGN POR SECCIONES*/
 
-/*RESPOSIVE DESIGN POR SECCIONES*/
 /*Responsive Design Header*/
 @media screen and (max-width: 880px) {
   header {
@@ -509,7 +509,7 @@ footer {
     margin-left: 60px;
   }
 }
-@media screen and (min-width:320px) and (max-width: 480px) {
+@media screen and (min-width: 320px) and (max-width: 480px) {
   .seccion-principal {
     display: flex;
     flex-direction: column;
