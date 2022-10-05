@@ -2,26 +2,24 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  scroll-behavior: smooth;
 }
 :root {
-  --primario: rgb(149, 211, 211);
-  ---secundario: rgb(245, 193, 250);
-  --terciario: rgb(52, 176, 180);
+  --primario: rgb(9, 184, 154);
+  --secundario: rgb(76, 16, 88);
 }
 body {
   font-family: sans-serif;
 }
+
 /* HEADER*/
 header {
-  /* background:linear-gradient(90deg, rgb(0, 0, 0) 30%, rgb(124, 39, 124), rgb(2, 0, 14));*/
   background-image: url(./img-portfolio/img-3.webp);
   background-size: cover;
   position: fixed;
   min-width: 100%;
-  background-color: aqua;
   z-index: 3000;
 }
-
 header ul {
   display: flex;
   justify-content: end;
@@ -38,58 +36,18 @@ header ul li a {
   text-decoration: none;
 }
 .contacto {
-  background-color:rgb(76, 16, 88) ;
+  background-color: var(--secundario);
   border-radius: 50px;
 }
 .contacto a {
   color: antiquewhite;
   text-decoration: none;
 }
-/*Responsive Design Header*/
-
-@media screen and (max-width: 880px) {
-  header {
-    background: linear-gradient(
-      90deg,
-      rgb(0, 0, 0) 30%,
-      rgb(124, 39, 124),
-      rgb(2, 0, 14)
-    );
-  }
-  .ul-header li {
-    font-size: 15px;
-  }
-}
-@media screen and (min-width: 320px) and (max-width: 480px) {
-  header {
-    background: linear-gradient(
-      90deg,
-      rgb(0, 0, 0) 30%,
-      rgb(124, 39, 124),
-      rgb(2, 0, 14));
-    position: fixed;
-  }
-  .nav-header{
-    margin-left: 5px;
-  }
-  .ul-header{
-    justify-content: center; 
-  }
-  .ul-header li {
-    font-size: 10px;
-    padding: 5px;
-    margin: 5px;
-    display: flex;
-    align-items: center;
-  }
-}
-
 /*FIN HEADER*/
 
 /*INICIO SECCION PRINCIPAL*/
 .seccion-principal {
   background-image: url(./img-portfolio/img-3.webp);
-  background-color: rgb(75, 24, 85);
   background-size: cover;
   display: flex;
   justify-content: space-evenly;
@@ -110,7 +68,6 @@ header ul li a {
 .cont-presentacion p {
   font-size: 50px;
 }
-
 #h3-presentacion {
   font-size: 45px;
   margin-bottom: 10px;
@@ -122,12 +79,11 @@ header ul li a {
 #h3-presentacion span {
   color: white;
 }
-
 .span {
   font-size: 70px;
   color: white;
   font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
-  text-shadow: 5px 5px 5px rgb(9, 184, 154);
+  text-shadow: 5px 5px 5px rgb(38, 124, 110);
 }
 .seccion-principal p {
   font-size: 20px;
@@ -135,7 +91,7 @@ header ul li a {
 }
 button {
   margin-top: 30px;
-  background-color: rgb(76, 16, 88);
+  background-color: var(--secundario);
   border-radius: 600px;
   padding: 20px;
   border: 1px;
@@ -155,62 +111,6 @@ button a {
   width: 100%;
   border-radius: 50%;
 }
-
-/*Responsive Design sección principal*/
-@media screen and (max-width: 880px) {
-  .seccion-principal {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-  }
-  .cont-presentacion {
-    width: 80%;
-    text-align: center;
-  }
-  #h3-presentacion {
-    font-size: 40px;
-    text-align: center;
-    margin-left: 60px;
-  }
-}
-@media screen and (max-width: 480px) {
-  .seccion-principal {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-  }
-  .span {
-    font-size: 40px;
-    width: 100%;
-  }
-  .cont-presentacion {
-    width: 300px;
-    margin-top: 20px;
-    padding-top: 30px;
-    text-align: center;
-    margin-bottom: 30px;
-  }
-  .cont-presentacion * {
-    margin-bottom: 30px;
-  }
-  .cont-presentacion h1 {
-    font-size: 20px;
-    width: 100%;
-  }
-  #h3-presentacion {
-    font-size: 20px;
-    text-align: center;
-    margin-left: 0px;
-  }
-  button {
-    padding: 10px;
-  }
-  .img-principal{
-    width: 120px;
-    height: 120px;
-  }
-}
-
 /*FINAL SECCION PRINCIPAL*/
 
 /*INICIO SECCION CONOCIMIENTOS*/
@@ -226,14 +126,14 @@ button a {
   padding-top: 100px;
 }
 .conocimientos-1 {
-  background-color:black;
+  background-color: black;
   width: 500px;
   color: white;
 }
 .conocimientos-1 h2 {
   padding: 20px;
   font-size: 30px;
-  color: rgb(9, 184, 154);
+  color: var(--primario);
 }
 .conocimientos-1 p {
   font-size: 20px;
@@ -249,9 +149,7 @@ button a {
   margin-top: 12px;
   padding: 1em;
 }
-
 .iconos {
-  background-color: white;
   background-image: url(./img-portfolio/img-3.webp);
   background-position: end;
   width: 230px;
@@ -263,59 +161,28 @@ button a {
   margin: auto;
   border-radius: 12px;
 }
-
 i {
   font-size: 80px;
-  color: rgb(6, 214, 179);
+  color: var(--primario);
 }
 .iconos:hover {
   transform: scale(1.1);
-  box-shadow: 0px 20px 25px -10px rgba(63, 232, 238, 0.5);
+  box-shadow: 0px 20px 25px -10px var(--primario);
   cursor: pointer;
 }
-
 h2 {
   text-align: center;
 }
 h4 {
-  color: rgb(28, 235, 166);
+  color: var(--primario);
   text-align: center;
   margin-top: 20px;
 }
-
-/*Responsive Design sección conocimientos*/
-
-@media screen and (max-width: 880px) {
-  .grid {
-    grid-template-columns: repeat(2, 1fr);
-    padding: 50px;
-    min-width: none;
-    min-height: none;
-  }
-}
-@media screen and (min-width: 320px) and (max-width: 480px) {
-  .seccion-conocimientos{
-    padding: 20px;
-  }
-  .conocimientos-1 {
-    width: 300px;
-    padding: 10px;
-  }
-  .grid {
-    grid-template-columns: 1fr;
-    width: 300px;
-  }
-  .iconos{
-    width: 150px;
-    height: 150px;
-  }
-}
 /*FINAL SECCION CONOCIMIENTOS*/
 
-/*INICO SECCION CITA*/
+/*INICIO SECCION CITA*/
 .seccion-cita {
   background-image: url(./img-portfolio/img-prueba2.jpg);
-  background-color: black;
   background-size: cover;
   padding: 10px;
   display: flex;
@@ -331,35 +198,14 @@ blockquote {
 }
 #comillas {
   font-size: 100px;
-  color: rgb(9, 184, 154);
+  color: var(--primario);
   display: flex;
   justify-content: center;
 }
 .seccion-cita p {
   font-size: 40px;
   padding: 30px;
-  color: rgb(9, 184, 154);
-}
-/*Responsive Design sección cita*/
-@media screen and (max-width: 880px) {
-  blockquote {
-    width: 80%;
-    margin: 70px;
-  }
-}
-@media screen and (min-width: 320px) and (max-width: 480px) {
-  blockquote {
-    color: rgb(43, 206, 179);
-    text-align: center;
-  }
-  
-  .seccion-cita p{
-    margin-right: 0px;
-    margin: none;
-    width: 200px;
-    font-size: 20px;
-    text-align: center;
-  }
+  color: var(--primario);
 }
 /*FINAL SECCION CITA*/
 
@@ -380,11 +226,10 @@ blockquote {
   width: 500px;
   color: white;
 }
-
 .seccion-proyectos1 h2 {
   padding: 20px;
   font-size: 30px;
-  color: rgb(9, 184, 154);
+  color: var(--primario);
 }
 .seccion-proyectos1 p {
   font-size: 20px;
@@ -401,7 +246,6 @@ blockquote {
   margin-top: 15px;
 }
 .div-grid {
-  background-color: white;
   width: 100%;
   height: auto;
   display: flex;
@@ -411,15 +255,13 @@ blockquote {
   margin: auto;
   border-radius: 12px;
   padding-top: 10px;
+  background-color: white;
 }
-/*Prueba hover*/
 .div-grid:hover {
-  background-color: rgb(252, 251, 253);
   transform: scale(1.1);
-  box-shadow: 0px 20px 25px -10px rgba(63, 232, 238, 0.5);
+  box-shadow: 0px 20px 25px -10px var(--primario);
   cursor: pointer;
 }
-
 .div-grid2 {
   width: 100%;
   margin: 10px;
@@ -434,25 +276,9 @@ blockquote {
 .proyectos-nombre {
   align-items: center;
 }
-
-/*Responsive Design sección proyectos*/
-@media screen and (max-width: 880px) {
-  .grid2 {
-    grid-template-columns: repeat(2, 1fr);
-    width: 0%;
-  }
-  .div-grid {
-    width: 200px;
-  }
-}
-@media screen and (max-width: 480px) {
-  .seccion-proyectos1 {
-    width: 200px;
-  }
-  .grid2 {
-    grid-template-columns: 1fr;
-    width: 300px;
-  }
+#a-portfolio{
+  text-decoration: none;
+  color: black;
 }
 /*FINAL SECCION PROYECTOS*/
 
@@ -489,7 +315,7 @@ blockquote {
   margin-top: 30px;
   margin-bottom: 50px;
   text-align: left;
-  text-shadow: 15px 15px 15px rgb(180, 124, 252);
+  text-shadow: 15px 15px 15px var(--secundario);
   font-size: 30px;
 }
 .iconos-contacto {
@@ -501,13 +327,12 @@ blockquote {
   color: white;
 }
 .iconos-contacto i {
-  color:rgb(9, 184, 154) ;
+  color: rgb(9, 184, 154);
 }
 #icono-contacto {
   font-size: 20px;
   width: 30px;
 }
-
 .div2-form {
   background-color: black;
   padding-top: 20px;
@@ -516,7 +341,7 @@ blockquote {
 }
 .div2-form h3 {
   color: white;
-  text-shadow: 15px 15px 15px rgb(180, 124, 252);
+  text-shadow: 15px 15px 15px var(--secundario);
   font-size: 30px;
 }
 .nombre-apellido {
@@ -544,7 +369,7 @@ label {
 input {
   margin-bottom: 15px;
   border-radius: 10px;
-  border-color: rgb(139, 99, 212);
+  border-color: rgba(127, 77, 221, 0.5);
   padding: 5px;
   box-shadow: 0px 20px 25px -10px rgba(127, 77, 221, 0.5);
   background-image: url(./img-portfolio/img-3.webp);
@@ -563,7 +388,7 @@ input {
   width: 450px;
   height: 200px;
   border-radius: 10px;
-  border-color: rgb(172, 127, 255);
+  border-color: rgba(127, 77, 221, 0.5);
   box-shadow: 0px 20px 25px -10px rgba(127, 77, 221, 0.5);
   background-image: url(./img-portfolio/img-3.webp);
   opacity: 70%;
@@ -580,73 +405,14 @@ input {
 }
 #button-form:hover {
   cursor: pointer;
-  background-color:black;
+  background-color: black;
   transform: scale(1.1);
-  color: rgb(9, 184, 154);
-}
-/*Responsive Design Formulario*/
-@media screen and (max-width: 880px) {
-  .div-form {
-    flex-direction: column;
-  }
-  .nombre-apellido {
-    flex-direction: column;
-  }
-  #mensaje {
-    width: 250px;
-  }
-  .div1-form {
-    margin: 60px;
-    height: 300px;
-  }
-  .div1-form h3 {
-    text-align: left;
-  }
-  .div1-form p {
-    margin: 10px;
-  }
-  .iconos-form {
-    margin: 30px;
-  }
-  .div2-form {
-    margin: 60px;
-  }
-  .div2-form h3 {
-    text-align: left;
-  }
-}
-
-@media screen and (max-width: 480px) {
-  .div-form {
-    min-width: 90%;
-  }
-  #icono-contacto {
-    margin-top: 10px;
-  }
-  .iconos-contacto {
-    margin-left: 50px;
-  }
-  .div1-form {
-    height: 400px;
-  }
-  .div1-form h3 {
-    text-align: center;
-  }
-  .div1-form p {
-    text-align: center;
-  }
-  .div2-form {
-    text-align: center;
-  }
-  .div2-form h3 {
-    text-align: center;
-  }
+  color: var(--primario);
 }
 /*FINAL SECCION FORMULARIO*/
 
 /*INICIO FOOTER*/
 footer {
-  background-color: lightgreen;
   background-image: url(./img-portfolio/img-3.webp);
   background-size: cover;
   padding: 50px;
@@ -683,24 +449,241 @@ footer {
   color: white;
   font-size: 20px;
 }
-/*Responsive Design Footer*/
+/*FINAL FOOTER*/
+
+
+/*RESPOSIVE DESIGN POR SECCIONES*/
+/*Responsive Design Header*/
+@media screen and (max-width: 880px) {
+  header {
+    background: linear-gradient(
+      90deg,
+      rgb(0, 0, 0) 30%,
+      rgb(124, 39, 124),
+      rgb(2, 0, 14)
+    );
+  }
+  .ul-header li {
+    font-size: 15px;
+  }
+}
 @media screen and (min-width: 320px) and (max-width: 480px) {
-  footer{
+  header {
+    background: linear-gradient(
+      90deg,
+      rgb(0, 0, 0) 30%,
+      rgb(124, 39, 124),
+      rgb(2, 0, 14)
+    );
+    position: fixed;
+  }
+  .nav-header {
+    margin-left: 5px;
+  }
+  .ul-header {
+    justify-content: center;
+  }
+  .ul-header li {
+    font-size: 10px;
+    padding: 5px;
+    margin: 5px;
+    display: flex;
+    align-items: center;
+  }
+}
+
+/*Responsive Design sección principal*/
+@media screen and (max-width: 880px) {
+  .seccion-principal {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+  .cont-presentacion {
+    width: 80%;
+    text-align: center;
+  }
+  #h3-presentacion {
+    font-size: 40px;
+    text-align: center;
+    margin-left: 60px;
+  }
+}
+@media screen and (min-width:320px) and (max-width: 480px) {
+  .seccion-principal {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+  .span {
+    font-size: 40px;
+    width: 100%;
+    text-shadow: 5px 5px 5px var(--primario);
+  }
+  .cont-presentacion {
+    width: 300px;
+    margin-top: 20px;
+    padding-top: 30px;
+    text-align: center;
+    margin-bottom: 30px;
+  }
+  .cont-presentacion * {
+    margin-bottom: 30px;
+  }
+  .cont-presentacion h1 {
+    font-size: 20px;
+    width: 100%;
+  }
+  #h3-presentacion {
+    font-size: 20px;
+    text-align: center;
+    margin-left: 0px;
+  }
+  button {
     padding: 10px;
   }
-  
-  .ul-footer li{
+  .img-principal {
+    width: 120px;
+    height: 120px;
+  }
+}
+/*Responsive Design sección conocimientos*/
+@media screen and (max-width: 880px) {
+  .grid {
+    grid-template-columns: repeat(2, 1fr);
+    padding: 50px;
+    min-width: none;
+    min-height: none;
+  }
+}
+@media screen and (min-width: 320px) and (max-width: 480px) {
+  .seccion-conocimientos {
+    padding: 20px;
+  }
+  .conocimientos-1 {
+    width: 300px;
+    padding: 10px;
+  }
+  .grid {
+    grid-template-columns: 1fr;
+    width: 300px;
+  }
+  .iconos {
+    width: 150px;
+    height: 150px;
+  }
+}
+/*Responsive Design sección cita*/
+@media screen and (max-width: 880px) {
+  blockquote {
+    width: 80%;
+    margin: 70px;
+  }
+}
+@media screen and (min-width: 320px) and (max-width: 480px) {
+  blockquote {
+    text-align: center;
+  }
+
+  .seccion-cita p {
+    margin-right: 0px;
+    margin: none;
+    width: 200px;
+    font-size: 20px;
+    text-align: center;
+  }
+}
+/*Responsive Design sección proyectos*/
+@media screen and (max-width: 880px) {
+  .grid2 {
+    grid-template-columns: repeat(2, 1fr);
+    width: 0%;
+  }
+  .div-grid {
+    width: 200px;
+  }
+}
+@media screen and (max-width: 480px) {
+  .seccion-proyectos1 {
+    width: 200px;
+  }
+  .grid2 {
+    grid-template-columns: 1fr;
+    width: 300px;
+  }
+}
+/*Responsive Design sección formulario*/
+@media screen and (max-width: 880px) {
+  .div-form {
+    flex-direction: column;
+  }
+  .nombre-apellido {
+    flex-direction: column;
+  }
+  #mensaje {
+    width: 250px;
+  }
+  .div1-form {
+    margin: 60px;
+    height: 300px;
+  }
+  .div1-form h3 {
+    text-align: left;
+  }
+  .div1-form p {
+    margin: 10px;
+  }
+  .iconos-form {
+    margin: 30px;
+  }
+  .div2-form {
+    margin: 60px;
+  }
+  .div2-form h3 {
+    text-align: left;
+  }
+}
+@media screen and (max-width: 480px) {
+  .div-form {
+    min-width: 90%;
+  }
+  #icono-contacto {
+    margin-top: 10px;
+  }
+  .iconos-contacto {
+    margin-left: 50px;
+  }
+  .div1-form {
+    height: 400px;
+  }
+  .div1-form h3 {
+    text-align: center;
+  }
+  .div1-form p {
+    text-align: center;
+  }
+  .div2-form {
+    text-align: center;
+  }
+  .div2-form h3 {
+    text-align: center;
+  }
+}
+/*Responsive Design Footer*/
+@media screen and (min-width: 320px) and (max-width: 480px) {
+  footer {
+    padding: 10px;
+  }
+  .ul-footer li {
     margin: 5px;
     width: auto;
     font-size: 10px;
     text-align: end;
   }
-  .logos a{
+  .logos a {
     font-size: 10px;
   }
-  .frase-footer{
+  .frase-footer {
     font-size: 15px;
-  
   }
 }
-/*FINAL FOOTER*/
