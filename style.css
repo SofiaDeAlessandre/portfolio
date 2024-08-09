@@ -54,6 +54,7 @@ header ul li a {
   min-height: 100vh;
   align-items: center;
   min-width: 100%;
+
 }
 .cont-presentacion {
   padding: 50px;
@@ -276,8 +277,7 @@ blockquote {
 .proyectos-nombre {
   align-items: center;
 }
-#a-portfolio {
-  text-decoration: none;
+.a-proyectos {
   color: black;
 }
 /*FINAL SECCION PROYECTOS*/
